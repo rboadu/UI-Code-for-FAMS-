@@ -1,0 +1,93 @@
+.LoginContainer{
+    display: flex;
+    flex-direction: row;
+    height: 100%; 
+    width: 100%;     
+
+    
+}
+
+.WelcomeContainer{
+    height: 100vh; 
+    text-align: left;
+    padding: 3vh;
+    width: 80vh;         
+  
+   
+}
+
+.line-1 {
+    position: relative;
+    top: 50%;
+    width: 24em; /* Width to match the final text length */
+    margin: 0 auto; /* Center the element */
+    border-right: 2px solid rgba(255, 255, 255, 0.75); /* Cursor effect */
+    font-size: 10vh; 
+    text-align: center; /* Center the text */
+    white-space: nowrap; /* Prevent wrapping */
+    overflow: hidden; /* Hide overflow */
+    transform: translateY(-50%); /* Center vertically */
+    animation: none; /* Start without animation */
+}
+
+/* Animation */
+.anim-typewriter {
+    animation: typewriter 4s steps(44) 1s 1 normal both, 
+               blinkTextCursor 500ms steps(44) infinite normal;
+}
+
+/* Typewriter effect */
+@keyframes typewriter {
+    from { width: 0; } /* Start with 0 width */
+    to { width: 8em; } /* End with full width, must match .line-1 width */
+}
+
+/* Cursor blink effect */
+@keyframes blinkTextCursor {
+    0%, 100% { border-right-color: rgba(255, 255, 255, 0.75); } /* Cursor color visible */
+    30% { border-right-color: transparent; } /* Cursor color hidden */
+}
+
+
+
+.LoginText{
+    font-size: 40px; 
+}
+
+.LoginFormContainer{
+    background-color: #57068C;
+    width: 100%;
+    length: 100%;
+
+}
+.FormContainer{
+    padding: 13vh;
+   
+}
+.login-form {
+    background-color: #EEE6F3;
+    border-radius: 8px;   
+    box-shadow: 0 7px 7px #542d44;
+    color: #57068C;
+    height: 100vh; 
+    max-width: 700px;
+    padding: 50px;
+    width: 80%;
+   
+}
+
+.login-form button {
+    background-color: #007bff;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px;
+    width: 50%;
+    
+}
+
+.google-button {
+    margin-top: 10px;
+    width: 100%;
+   
+}
