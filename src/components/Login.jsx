@@ -3,6 +3,9 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import GoogleButton from "react-google-button";
 import './Login.css';
+
+
+
 function Login(){
     return(
       <>
@@ -10,8 +13,6 @@ function Login(){
         <div className="WelcomeContainer">
           <h1 className="line-1 anim-typewriter">Welcome back</h1>
         </div>
-
-
         <div className="LoginFormContainer">
           <div className="FormContainer">
             <Form className="login-form">
