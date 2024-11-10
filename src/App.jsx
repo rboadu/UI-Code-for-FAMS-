@@ -13,7 +13,7 @@ function App() {
       </div>
 
       <div> <Login /></div>
-    <div> <Prof /></div>
+    <div> <Prof/></div>
 
     
     

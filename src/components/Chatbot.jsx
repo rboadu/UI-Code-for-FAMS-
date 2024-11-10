@@ -1,46 +1,54 @@
-import React from "react";//import React
-import './Chatbot.css';
-// import { useState } from 'react'
+import React, { useState } from "react"; 
+import './Chatbot.css'; 
 
-function Chatbot(){
-//     // const [inputText, setInputText] = useState('');
-//     // const [responseText, setResponseText] = useState('');
-
-//     return (<>
+function Chatbot() {
+    const [inputText, setInputText] = useState('');
+    const [responseText, setResponseText] = useState('');
 
 
+    const handleInputChange = (e) => {
+        setInputText(e.target.value);
+    };
 
-// <div className="right_detail">
+    // Handle form submission
+    const handleFormSubmit = (e) => {
+        e.preventDefault(); // Prevent page reload
+        // Example response logic
+        setResponseText(`You said: "${inputText}"`);
+        setInputText(''); // this will Clear input field
+    };
 
-// <h1>Welcome to CatMe Chatbot</h1>
+    return (
+        <div className="right_detail">
+            <h1>Welcome to CatMe Chatbot</h1>
 
-// <div className="chat-container">
-//     <div className="chat-box">
-//         {/* <div className="chat">
-//             {responseText && <div className="response">{responseText}</div>}
-//         </div> */}
-//     </div>
-//     <form className="input-form">
-//         <input
-//             type="text"
-//             // value={inputText}
-//             // onChange={handleInputChange}
-//             placeholder="Type your message..."
-//             className="input-field"
-//         />
-//         <button type="submit" className="send-button">
-//             Send
-//         </button>
-//     </form>
+            <div className="chat-container">
+                <div className="chat-box">
+                    <div className="chat">
+                        {/* Display response text if available */}
+                        {responseText && <div className="response">{responseText}</div>}
+                    </div>
+                </div>
 
-// </div>
-//     <div id='buttonToDetail'>
-    
-//     </div>
-// </div>
+                <form className="input-form" onSubmit={handleFormSubmit}>
+                    <input
+                        type="text"
+                        value={inputText}
+                        onChange={handleInputChange}
+                        placeholder="Type your message..."
+                        className="input-field"
+                    />
+                    <button type="submit" className="send-button">
+                        Send
+                    </button>
+                </form>
+            </div>
 
-
-    // </>);
+            <div id="buttonToDetail">
+                {/* Placeholder for additional buttons or details */}
+            </div>
+        </div>
+    );
 }
 
-export default Chatbot; 
+export default Chatbot;

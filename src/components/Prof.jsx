@@ -1,12 +1,12 @@
-import React from "react";//import React
-import './Chatbot';
-import './Dashboard';
+import React from "react"; 
+import Chatbot from './Chatbot';
+import Dashboard from './Dashboard'; 
 
 
 function Prof(){
     return (<>
         <div> <Chatbot/></div>
-        <div> <Dashboard /></div>
+        <div> <Dashboard/></div>
     </>);
 }
 
