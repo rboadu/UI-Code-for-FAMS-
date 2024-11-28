@@ -7,12 +7,19 @@
     
 }
 
+.loginLogo{
+    width: 600px;
+   
+    
+}
+
 .WelcomeContainer{
     height: 100vh; 
     text-align: left;
     padding: 3vh;
-    width: 80vh;         
-  
+    width: 80vh;  
+    color: black;
+   
    
 }
 

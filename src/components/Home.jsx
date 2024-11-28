@@ -4,7 +4,7 @@ function Home(){
 
     return(
         <>
-            <h1> Welcome to FAMs </h1>
+            <h1> Empowering the Future: Soft Robotics for Innovation, Accessibility, and Education </h1>
         </>
     )
 }

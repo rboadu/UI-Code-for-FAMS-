@@ -11,8 +11,16 @@ h1 {
   font-variation-settings:
     "wdth" 100;
 
-  font-size: 14vh;
+  font-size: 9vh;
+  background: -webkit-linear-gradient(rgb(153, 76, 241), #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 
 
+
+
+.famsLogo{
+  border-radius: 12px;
+}
